@@ -47,7 +47,7 @@ export default [
         "liked": true,
         "replies": "965",
         "retuits": "2.4K",
-        "likes": 4000,
+        "likes": 4001,
         "dislikes": 420
     },
     {
