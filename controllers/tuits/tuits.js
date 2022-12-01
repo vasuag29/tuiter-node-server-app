@@ -1,6 +1,7 @@
 export default [
     {
         "_id": 345,
+        "topic": "Space",
         "userName": "SpaceX",
         "handle": "SpaceX",
         "time": "2h",
@@ -10,6 +11,7 @@ export default [
         "image_title": "",
         "image_description": "",
         "image_link": "",
+        "title": "",
         "liked": true,
         "replies": "123",
         "retuits": "432",
@@ -35,6 +37,7 @@ export default [
     },
     {
         "_id": 234,
+        "topic": "Celebs",
         "userName": "New York Post",
         "handle": "nypost",
         "time": "10h",
@@ -44,6 +47,7 @@ export default [
         "image_title": "",
         "image_description": "",
         "image_link": "",
+        "title": "",
         "liked": true,
         "replies": "965",
         "retuits": "2.4K",
@@ -51,12 +55,22 @@ export default [
         "dislikes": 420
     },
     {
-        "_id": 3423, "topic": "Traffic", "userName": "The Boring Company",
-        "handle": "boringcompany", "time": "2h", "userImage": "/images/image_theboringcompany.png",
+        "_id": 3423,
+        "topic": "Traffic",
+        "userName": "The Boring Company",
+        "handle": "boringcompany",
+        "time": "2h",
+        "userImage": "/images/image_theboringcompany.png",
+        "image": "",
+        "image_title": "",
+        "image_description": "",
+        "image_link": "",
         "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
         "tuit": "The Boring Company (TBC) is an American infrastructure and tunnel construction services company founded by Elon Musk. Its ongoing and proposed projects are designed for intra-city ('loop') transit systems.",
-        "liked": false, "likes": 2345,
-        "replies": 123, "retuits": 432,
+        "liked": false,
+        "likes": 2345,
+        "replies": 123,
+        "retuits": 432,
         "dislikes": 222
     },
 ];

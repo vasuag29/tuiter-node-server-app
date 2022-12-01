@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
 const schema = mongoose.Schema({
+                                   topic: String,
                                    userName: String,
                                    handle: String,
                                    time: String,
@@ -10,6 +11,7 @@ const schema = mongoose.Schema({
                                    image_title: String,
                                    image_description: String,
                                    image_link: String,
+                                   title: String,
                                    likes: Number,
                                    liked: Boolean,
                                    replies: String,

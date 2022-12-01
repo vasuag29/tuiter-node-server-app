@@ -10,9 +10,14 @@ const templateTuit = {
     ...currentUser,
     "topic": "Space",
     "time": "2h",
+    "image": "",
+    "image_title": "",
+    "image_description": "",
+    "image_link": "",
+    "title": "",
     "liked": false,
-    "replies": 0,
-    "retuits": 0,
+    "replies": "0",
+    "retuits": "0",
     "likes": 0,
     "dislikes": 0
 }
@@ -33,20 +38,19 @@ const findTuits  = async (req, res) => {
 }
 
 const updateTuit = async (req, res) => {
-    const tuitdIdToUpdate = parseInt(req.params.tid);
+    const tuitdIdToUpdate = req.params.tid;
     const updates = req.body;
     const status = await tuitsDao
         .updateTuit(tuitdIdToUpdate,
                     updates);
     res.json(status);
-
 }
 
 const deleteTuit = async (req, res) => {
     const tuitdIdToDelete = req.params.tid;
     const status = await tuitsDao
         .deleteTuit(tuitdIdToDelete);
-    res.sendStatus(status);
+    res.json(status);
 }
 
 
